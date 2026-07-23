@@ -78,7 +78,7 @@ if question:
     with st.chat_message("assistant"):
         with st.spinner("Recherche en cours..."):
             try:
-                resp = requests.post(API_URL, json={"message": question}, timeout=30)
+                resp = requests.post(API_URL, json={"message": question}, timeout=200)
                 if resp.status_code == 200:
                     data = resp.json()
                     reponse = data.get("reponse", "")
