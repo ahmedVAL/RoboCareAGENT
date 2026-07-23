@@ -13,7 +13,7 @@ import requests
 import streamlit as st
 import base64
 
-API_URL = "https://robocareagent.onrender.com/chat"
+API_URL = "https://robocare-backend.onrender.com/chat"
 
 st.set_page_config(page_title="Chatbot RoboCare - Test", page_icon="robocare.ico")
 
